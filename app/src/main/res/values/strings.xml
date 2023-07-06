@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Gourmet App</string>
+    <string name="support">Powered by <a href="http://webservice.recruit.co.jp/">ホットペッパー Webサービス</a></string>
+</resources>
