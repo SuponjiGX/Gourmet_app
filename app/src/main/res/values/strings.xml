@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Gourmet App</string>
     <string name="support">Powered by <a href="http://webservice.recruit.co.jp/">ホットペッパー Webサービス</a></string>
+    <string name="textView1">ido</string>
+    <string name="textView2">keido</string>
+
+    <string-array name="serch_zone">
+        <item> 300m </item>
+        <item> 500m </item>
+        <item> 1000m </item>
+        <item> 2000m </item>
+        <item> 3000m </item>
+    </string-array>
 </resources>
