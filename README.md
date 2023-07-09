@@ -1,9 +1,11 @@
 # Gourmet_app
 
+### アプリ画面
 ![検索画面](https://github.com/SuponjiGX/Gourmet_app/assets/56065862/063a2e50-d1f1-4672-9847-5dd009176eb3)
 ![店舗一覧](https://github.com/SuponjiGX/Gourmet_app/assets/56065862/0c724654-4132-4ae2-992a-67b8f7f4222c)
 ![店舗詳細](https://github.com/SuponjiGX/Gourmet_app/assets/56065862/8c8660e5-c8cb-47c8-b459-803f69319c39)
 
+  
 ### アプリ名
 #### 
 - おみつ君1号(お店見つかる君1号)
