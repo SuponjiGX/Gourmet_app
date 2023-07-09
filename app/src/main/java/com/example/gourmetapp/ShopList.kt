@@ -57,7 +57,7 @@ class ShopList : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val gourmetUrl = "$mainUrl?key=$apiKey&lat=$latitude&lng=$longtitude&range=$radius&start=3&format=json"
+        val gourmetUrl = "$mainUrl?key=$apiKey&lat=$latitude&lng=$longtitude&range=$radius&count=20&format=json"
 
         gourmetTask(gourmetUrl)
 
