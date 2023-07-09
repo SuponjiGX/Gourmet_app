@@ -17,6 +17,7 @@ import android.widget.ListView
 import android.widget.SimpleAdapter
 import com.example.gourmetapp.databinding.ActivityShopListBinding
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.github.kittinunf.fuel.Fuel
@@ -147,6 +148,9 @@ class ShopList : AppCompatActivity() {
 //            println(name)
         }
         println("itemlist: $itemList")
+        val dividerItemDecoration = DividerItemDecoration(this, LinearLayoutManager(this).getOrientation())
+        recyclerView.addItemDecoration(dividerItemDecoration)
+
         listAdapter = ListAdapter(this, itemList, itemClickListener)
 //        listAdapter.notifyDataSetChanged()
         recyclerView.adapter = listAdapter
@@ -167,7 +171,7 @@ class ShopList : AppCompatActivity() {
 
 
 
-    fun onButtonClick(view: View){
-        finish()
-    }
+//    fun onButtonClick(view: View){
+//        finish()
+//    }
 }
