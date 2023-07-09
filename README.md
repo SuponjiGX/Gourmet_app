@@ -1,5 +1,7 @@
 # Gourmet_app
 
+![スクリーンショット 2023-07-09 9 56 56](https://github.com/SuponjiGX/Gourmet_app/assets/56065862/063a2e50-d1f1-4672-9847-5dd009176eb3)
+
 ### アプリ名
 #### 
 - おみつ君1号(お店見つかる君1号)
