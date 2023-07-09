@@ -57,7 +57,7 @@ class ShopList : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val gourmetUrl = "$mainUrl?key=$apiKey&lat=$latitude&lng=$longtitude&range$radius&format=json"
+        val gourmetUrl = "$mainUrl?key=$apiKey&lat=$latitude&lng=$longtitude&range=$radius&start=3&format=json"
 
         gourmetTask(gourmetUrl)
 
@@ -105,8 +105,6 @@ class ShopList : AppCompatActivity() {
         lateinit var recyclerView: RecyclerView
         lateinit var listAdapter: ListAdapter
         val itemClickListener = MyItemClickListener(this)
-
-
         val itemList: MutableList<ListItem> = mutableListOf()
 
         val jsonObj = JSONObject(result)
@@ -117,6 +115,10 @@ class ShopList : AppCompatActivity() {
 //        recyclerView.layoutManager = LinearLayoutManager(this)
 //        listAdapter = ListAdapter(itemList)
 //        recyclerView.adapter = listAdapter
+
+        recyclerView = findViewById(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+
 
         for (i in 0 until gourmetJSONArray.length()){
             val gourmetJSON = gourmetJSONArray.getJSONObject(i)
@@ -144,11 +146,11 @@ class ShopList : AppCompatActivity() {
 //            listAdapter.notifyDataSetChanged()
 //            println(name)
         }
-        recyclerView = findViewById(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        listAdapter = ListAdapter(itemList, itemClickListener)
+        println("itemlist: $itemList")
+        listAdapter = ListAdapter(this, itemList, itemClickListener)
 //        listAdapter.notifyDataSetChanged()
         recyclerView.adapter = listAdapter
+//        println(listAdapter.itemCount)
     }
 
     suspend fun urlToBitmap(urlString: String): Bitmap? = withContext(Dispatchers.IO) {

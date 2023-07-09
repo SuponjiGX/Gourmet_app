@@ -44,12 +44,12 @@
 
     <TextView
         android:id="@+id/open_time"
-        android:layout_width="333dp"
-        android:layout_height="63dp"
-        android:layout_marginBottom="200dp"
+        android:layout_width="327dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="168dp"
         android:text="shop_open"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

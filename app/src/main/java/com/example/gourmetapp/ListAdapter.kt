@@ -2,6 +2,7 @@ package com.example.gourmetapp
 
 import android.annotation.SuppressLint
 import android.app.LauncherActivity
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +11,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ListAdapter(private val itemList: List<ListItem>, private  val onItemClickListener: OnItemClickListener) : RecyclerView.Adapter<ListAdapter.ViewHolder>() {
+class ListAdapter(private val context: Context, private val itemList: List<ListItem>, private  val onItemClickListener: OnItemClickListener) : RecyclerView.Adapter<ListAdapter.ViewHolder>() {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
         val photoImageView: ImageView = itemView.findViewById(R.id.image)
@@ -35,7 +36,7 @@ class ListAdapter(private val itemList: List<ListItem>, private  val onItemClick
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.list_item, parent, false)
         return ViewHolder(view)
     }
 
