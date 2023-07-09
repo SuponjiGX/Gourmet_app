@@ -3,7 +3,7 @@
 ### アプリ画面
 ![検索画面](https://github.com/SuponjiGX/Gourmet_app/assets/56065862/063a2e50-d1f1-4672-9847-5dd009176eb3)
 ![店舗一覧](https://github.com/SuponjiGX/Gourmet_app/assets/56065862/7f54cb01-c31a-4d04-a01e-c306486cf362)
-![店舗詳細](https://github.com/SuponjiGX/Gourmet_app/assets/56065862/8c8660e5-c8cb-47c8-b459-803f69319c39)
+![店舗詳細](https://github.com/SuponjiGX/Gourmet_app/assets/56065862/f56af2f6-8e22-4b53-ae03-4aa25620292a)
 
   
 ### アプリ名
